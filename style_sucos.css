@@ -22,7 +22,72 @@ header #texto_intro{
     
 }
 
+  .container img {
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 20px;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    float: left;
+  }
+  .container:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 
+.titulo_suco{
+    font: 25px arial;
+    margin-right: 20px;
+    color: rgb(0, 0, 134);
+    margin-top: 50px;
+    font-weight: 900;
+ 
+}
+
+.p_suco{
+    color: gray;
+    font: 11px arial;
+    padding: 8px;
+}
+.p2_suco{
+    font: 11px arial;
+    color: rgb(94, 94, 94);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.por{
+    color: rgb(165, 165, 165);
+    font: 15px arial;
+    text-transform: uppercase;
+    font-weight:800;
+    float: left;
+    margin-top:15px;
+    
+}
+
+.preco_suco{
+    color: #4bd66e;
+    font: 30px arial;
+    font-weight: 900;
+    margin-top: 30px;
+
+}
+
+.quantidade_suco input{
+    color: white;
+    background-color: rgb(255, 187, 0);
+    border: solid white;
+    border-radius: 10px;
+    font: 20px arial;
+    text-align: center;
+    height: 40px;
+    width: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
 .radio {
 	
@@ -37,17 +102,22 @@ header #texto_intro{
 	appearance: none;
 	outline: none;
 	cursor: pointer;
-	border-radius: 2px;
-	padding: 4px 8px;
-	background: #fd9001;
-	color: #bdbdbdbd;
-	font-size: 14px;
+	border-radius: 3px;
+	padding: 8px 12px;
+	background: #ffffff;
+	color: #313cd8;
+	font-size: 11px;
+    font-weight: 700;
+    border: solid 1px #313cd8; 
+    margin-right: 3px;
+    margin-bottom: 10px;
 	transition: all 100ms linear;
 }
 
 .radio input:checked {
-	background-image: linear-gradient(180deg, #52d64b, #65db6f);
+	background-color: #313cd8 ;
 	color: #fff;
+    font-weight: 700;
 	box-shadow: 0 1px 1px #aa4400a6;
 	text-shadow: 0 1px 0px #79485fa6;
 }
@@ -62,20 +132,26 @@ header #texto_intro{
 .btn-5 {
     background: #fd9001;
     color: #fff;
-    line-height: 42px;
-    padding: 20;
+    
+    padding: 10px 40px;
+    font-weight: 800;
     border: none;
     border-radius: 5px;
+    margin-bottom: 20px;
   }
    .btn-5:hover {
-    background: #52d64b;
+    background: #4bd679;
     color: #ffffff;
+    transition-duration: 500ms;
+    
      box-shadow:
+     
      -7px -7px 20px 0px #fff9,
      -4px -4px 5px 0px #fff9,
      7px 7px 20px 0px #0002,
      4px 4px 5px 0px #0001;
   }
+
 
   footer{
     margin-bottom: 20px;
