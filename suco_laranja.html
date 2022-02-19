@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    
     <header>
         <!--Logo-->
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -62,26 +63,26 @@
             </div>
         </nav>
     </header>
+
+    
     <div class="container">
     <img src="suco_laranja.png" alt="Suco de laranja" width="500" height="500"></div>
     <!--<img src="suco_laranja_info.jpg" alt="Suco de laranja" width="500" height="500">-->
 
     <div class="titulo_suco"><a>SUCO DE LARANJA INTEGRAL 900ML AMBIENTE - NATURAL ONE</a></div>
     <div class="p_suco"><a>Linha Ambiente. Ingredientes: Laranja e Maçã</a></div>
-    <div>
-        <div class="por">Por:</div>
-        <div class="preco_suco">R$ 11,99</div>
-    </div>
-    <div class="quantidade_suco"><input type="number" name="numero" id="numero"></div>
+        <div class="por">Quantidade:</div>
+
+    <div class="quantidade_suco"><input type="number" name="quantidade" id="quantidade"></div>
     <div class="radio">
-        <input label="180ml" type="radio" id="male" name="gender" value="male" checked>
-        <input label="500ml" type="radio" id="female" name="gender" value="female">
-        <input label="1 lt" type="radio" id="other" name="gender" value="other">
+        <input label="180ml R$9,90" type="radio" id="180" name="volume" value="" >
+        <input label="500ml R$7,90" type="radio" id="500" name="volume" value="">
+        <input label="900ml R$11,90" type="radio" id="900" name="volume" value="" checked>
     </div>
-    <button class="custom-btn btn-5"><span>Adicionar na sacola</span></button>
 
+<input type="button" class="custom-btn btn-5" value="Colocar na sacola" onclick="colocar_na_sacola()">
 
-    <div class="p_suco"><a>Entregamos a linha ambiente para todo o Brasil. Para entrega da linha refrigerada,
+    <!--<div class="p_suco"><a>Entregamos a linha ambiente para todo o Brasil. Para entrega da linha refrigerada,
             </a></div>
     <div class="p2_suco">CONSULTE SEU CEP ABAIXO:</div>
 
@@ -97,11 +98,11 @@
             antioxidante.</a></div>
 
 
+    -->
 
 
 
-
-
+    <div class="clear"></div>
     <footer>
 
         <div id="direitos-footer"><a>© 2022 The Company, todos os direitos reservados</a></div>
