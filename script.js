@@ -1,5 +1,30 @@
-function colocar_na_sacola(valor_sacola180, valor_sacola500, valor_sacola900) {
+var valor_sacola180 = 0
+var valor_sacola500 = 0
+var valor_sacola900 = 0
+var valor_total_sacola = 0
+var saborAtual = ""
+var valor_sacola_laranja = 0
 
+
+
+function indicaSabor(sabor) {
+    console.log(sabor)
+    if (sabor == "laranja") {
+        window.open("suco_laranja.html")
+    } else if (sabor == "maca") {
+        window.open("suco_laranja.html")
+    } else if (sabor == "mamao") {
+        window.open("suco_laranja.html")
+    } else if (sabor == "limao") {
+        window.open("suco_laranja.html")
+    }
+    saborAtual = sabor
+}
+
+
+
+function colocar_na_sacola() {
+    res.innerHTML = ''
     //entrada das variáveis
     let volume = document.getElementsByName('volume')
     let quant = document.getElementById('quantidade')
@@ -8,42 +33,21 @@ function colocar_na_sacola(valor_sacola180, valor_sacola500, valor_sacola900) {
 
     //calculo da sacolinha
     if (volume[0].checked) {
-        valor_sacola180 = + quantidade * 7.90
-        window.alert(valor_sacola180.toFixed(2))
-
+        valor_sacola180 += quantidade * 7.90
+        valor_total_sacola += valor_sacola180
     } else if (volume[1].checked) {
-        valor_sacola500 = + quantidade * 9.90
-        window.alert(valor_sacola500.toFixed(2))
-
+        valor_sacola500 += quantidade * 9.90
+        valor_total_sacola += valor_sacola500
     } else if (volume[2].checked) {
-        valor_sacola900 = + quantidade * 11.90
-        window.alert(valor_sacola900.toFixed(2))
-
-
-        //n funca mas deixei pra ver se é algo do tipo
-        return valor_sacola180
-
+        valor_sacola900 += quantidade * 11.90
+        valor_total_sacola += valor_sacola900
     }
-
-
+    res.innerHTML += `<p>Valor total sacola 180: R$${valor_sacola180}</p>`
+    res.innerHTML += `<p>Valor total sacola 500: R$${valor_sacola500}</p>`
+    res.innerHTML += `<p>Valor total sacola 900: R$${valor_sacola900}</p>`
+    res.innerHTML += `<p>Valor total da sacola: R$${valor_total_sacola}</p>`
 }
-function finaliza_compra(indicaProduto) {
-
-    //entrada variaveis
-
-
-
-    //descobre o produto que é
-    indicaProduto = parseFloat(prompt("Qual o produto?"))
-    //window.alert(valor_sacola500)
-
-    //separa para produto certo 
-    switch (indicaProduto) {
-        case 1:
-            valor_total_sacola = valor_sacola500
-            window.alert(valor_total_sacola)
-            window.alert(valor_sacola500)
-            break
-    }
+function sacola(){
+    res.innerHTML= `oi`
 
 }
